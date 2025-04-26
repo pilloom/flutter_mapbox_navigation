@@ -132,7 +132,7 @@ class _SampleNavigationAppState extends State<SampleNavigationApp> {
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
                         ElevatedButton(
-                          child: const Text("Start A to B"),
+                          child: const Text("Start A-B"),
                           onPressed: () async {
                             var wayPoints = <WayPoint>[];
                             wayPoints.add(_home);
@@ -184,7 +184,7 @@ class _SampleNavigationAppState extends State<SampleNavigationApp> {
                           width: 10,
                         ),
                         ElevatedButton(
-                          child: const Text("Free Drive"),
+                          child: const Text("Free"),
                           onPressed: () async {
                             await MapBoxNavigation.instance.startFreeDrive();
                           },
